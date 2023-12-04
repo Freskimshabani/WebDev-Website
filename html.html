@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
+    <title>HTML</title>
+</head>
+
+<body>
+    <nav>
+        <section id="logoNavSection">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+        </section>
+
+        <section id="mobileNavSection">
+            <button id="menuOpenNavButton" class="menu-button-style"><i class="fa-solid fa-bars"></i></button>
+        </section>
+
+        <section id="desktopNavSection">
+            <a href="aboutSubject.html">Rreth Lendes</a>
+            <a href="aboutMe.html">Rreth meje</a>
+            <a href="contact.html">Kontakto</a>
+        </section>
+    </nav>
+    <div id="menuNavSection" class="hide">
+        <button id="menuCloseNavButton" class="menu-button-style"><i class="fa-solid fa-x"></i></button>
+        <a href="aboutSubject.html">Rreth Lendes</a>
+        <a href="aboutMe.html">Rreth meje</a>
+        <a href="contact.html">Kontakto</a>
+    </div>
+    <header>
+        <h1 class="title">Web Development</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, nam.
+        </p>
+    </header>
+    <main>
+        <div id="buttonContainer">
+            <button id="toggleSideBarButton" class="button-style">Side Bar</button>
+            <button id="toggleOtherLinksButton" class="button-style">Linqe te tjera</button>
+        </div>
+        <section id="sideBar" class="show-sections">
+            <div id="sideBarContent" class="section-content">
+                <div id="sideBarTechnologies" class="side-bar-nav">
+                    <h2 class="subtitle">Teknologjite</h2>
+                    <a href="index.html" class="side-bar-link">Ballina</a>
+                    <a href="html.html" class="side-bar-link">HTML</a>
+                    <a href="css.html" class="side-bar-link">CSS</a>
+                    <a href="javascript.html" class="side-bar-link">JavaScript</a>
+                </div>
+
+                <div id="sideBarProjects" class="side-bar-nav">
+                    <h2 class="subtitle">Projektet</h2>
+                    <a href="https://freskimshabani.github.io/Clock-Animation/" class="side-bar-link">Project 1</a>
+                    <a href="https://freskimshabani.github.io/BEM-PROJECT/" class="side-bar-link">Project 2</a>
+                    <a href="https://freskimshabani.github.io/TicTacToe_Animated/" class="side-bar-link">Project 3</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mainContainer">
+            <div id="containerHeading">
+                <h2>HyperText Markup Language - HTML</h2>
+            </div>
+
+            <div id="aboutAuthor" class="container-style about-author-container">
+                <div class="container-image author-image">
+                    <img src="img/Sir_Tim_Berners-Lee_(cropped).jpg" alt="" class="image-style">
+                </div>
+                <div class="container-content author-description">
+                    <h2 class="subtitle">Tim Berners-Lee</h2>
+                    <p class="paragraph-style">
+                        Sir Timothy John Berners-Lee OM KBE FRS FREng FRSA DFBCS RDI, also known as TimBL, is an English
+                        computer scientist best known as the inventor of the World Wide Web, the HTML markup language,
+                        the URL system, and HTTP.
+                    </p>
+                </div>
+            </div>
+
+            <div id="versions" class="container-style versions-container">
+                <h2 class="subtitle">Versions Released:</h2>
+                <ul class="ul-style">
+                    <li>HTML 1.0 - 1993</li>
+                    <li>HTML 2.0 - 1995</li>
+                    <li>HTML 3.2 - 1997</li>
+                    <li>HTML 4.01 - 1999</li>
+                    <li>XHTML 1.0 - 2000</li>
+                    <li>HTML5 - 2008</li>
+                </ul>
+            </div>
+
+            <div id="aboutLanguage" class="container-style about-language-container">
+                <h2 class="subtitle">About HTML</h2>
+                <p class="paragraph-style">
+                    The HyperText Markup Language or HTML is the standard markup language for documents designed to be
+                    displayed in a web browser. It defines the meaning and structure of web content. It is often
+                    assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
+                    JavaScript.
+                </p>
+                <p class="paragraph-style">
+                    Web browsers receive HTML documents from a web server or from local storage and render the documents
+                    into multimedia web pages. HTML describes the structure of a web page semantically and originally
+                    included cues for its appearance.
+                </p>
+            </div>
+
+            <div id="refereneces" class="container-style refereneces-container">
+                <h2 class="subtitle">Refereneces</h2>
+                <ul class="ul-style">
+                    <li><a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a></li>
+                    <li><a href="https://www.educba.com/versions-of-html/">Educba</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="otherLinks" class="hide-sections">
+            <div id="otherLinksContent" class="section-content">
+
+                <div id="worksSection" class="side-container-style">
+                    <h2 class="subtitle">Detyrat</h2>
+                    <a href="htmlhistory/index.html" class="link-style">Historia e HTML</a>
+                    <a href="cssHistory/index.html" class="link-style">Historia e CSS</a>
+                    <a href="jsHistory/index.html" class="link-style">Historia e JavaScript</a>
+                    <a href="https://freskimshabani.github.io/OperacionetE2Numrave/" class="link-style">Kalkulatori</a>
+                    <a href="stilizimiJs/index.html" class="link-style">Stilizimi me JavaScript</a>
+                    <a href="tabelat/index.html" class="link-style">Tabelat</a>
+                    <a href="boxmodel/index.html" class="link-style">Box Model-i</a>
+                    <a href="jsHelloWorld/index.html" class="link-style">JavaScript: Hello World</a>
+                    <a href="bootstrap/index.html" class="link-style">Bootstrap: 1</a>
+                    <a href="bootstrap/index2.html" class="link-style">Bootstrap: 2</a>
+                </div>
+
+                <div id="questionSection" class="side-container-style">
+                    <h2 class="subtitle">Pyetjet Teorike</h2>
+                    <a href="" class="link-style">JS Frameworks</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; Web Development | Kolegji AAB
+    </footer>
+</body>
+
+</html>

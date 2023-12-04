@@ -1,0 +1,145 @@
+:root {
+    font-size: 15px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 10fr;
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+}
+
+nav {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    background-color: rgb(227, 227, 0);
+    color: black;
+    height: 100%;
+    z-index: 1000;
+    justify-content: baseline;
+}
+
+.nav--link {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: light;
+    font-size: 1.1rem;
+    padding: 1rem;
+    width: 100%;
+    transition: background ease 0.3s;
+}
+
+.nav--link:hover {
+    background-color: white;
+}
+
+main {
+    width: 100%;
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+    background-color: #eee;
+    align-items: center;
+    grid-column: 2 / span 1;
+}
+
+#Main--Content {
+    height: auto;
+    gap: 2rem;
+    margin: 2rem 5rem;
+}
+
+#Frameworks--Grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-auto-rows: 1fr;
+}
+
+.subtitle,
+.subtitle--2,
+.subtitle--3 {
+    border-bottom: 3px solid rgb(227, 227, 0);
+    padding-bottom: 0.2rem;
+}
+
+.text--image--container {
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.text--section {
+    width: 80%;
+    gap: 1rem;
+}
+
+.image--section {
+    gap: 1rem;
+}
+
+img {
+    display: flex;
+    width: auto;
+}
+
+p {
+    color: #808080;
+}
+
+table {
+    border: 3px solid rgb(227, 227, 0);
+    border-spacing: 0;
+}
+
+table td,
+th {
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid rgb(227, 227, 0);
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(255, 255, 188);
+}
+
+.content--style {
+    gap: 1rem;
+    border: 3px solid black;
+    padding: 1.5rem;
+}
+
+.card--img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.column--box {
+    display: flex;
+    flex-direction: column;
+}
+
+.row--box {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid--box {
+    display: grid;
+}

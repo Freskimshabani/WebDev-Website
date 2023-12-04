@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Change Colors Here: <span id="colorSpan">Hello World!</span></h1>
+
+    <button onclick="clickMe()">Click Me</button>
+    <button onmouseover="hoverMe()">Hover Me</button>
+    <button ondblclick="doubleClickMe()">Double Click Me</button>
+    <button onmouseenter="enterMe()">Enter Me</button>
+    <button onmouseleave="leaveMe()">Leave Me</button>
+
+    <button onclick="resetMe()">Reset</button>
+
+    <script>
+        function clickMe() {
+            colorSpan.style.color = "red";
+        }
+        function hoverMe() {
+            colorSpan.style.color = "blue";
+        }
+        function doubleClickMe() {
+            colorSpan.style.backgroundColor = "yellow";
+        }
+        function enterMe() {
+            colorSpan.style.fontSize = "10pt";
+        }
+        function leaveMe() {
+            colorSpan.style.fontStyle = "italic";
+        }
+        function resetMe() {
+            colorSpan.style.color = "black";
+            colorSpan.style.fontStyle = "normal";
+            colorSpan.style.backgroundColor = "transparent";
+            colorSpan.style.fontSize = "2rem"
+        }
+    </script>
+</body>
+
+</html>

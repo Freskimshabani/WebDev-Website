@@ -1,0 +1,27 @@
+table {
+    border-spacing: 0;
+    border: solid 1px gray;
+
+    & caption {
+        padding: 15px;
+    }
+}
+
+thead {
+    background-color: lightgray;
+}
+
+td,
+th {
+    padding: 5px 15px;
+}
+
+td,
+th,
+tr {
+    border: solid 1px gray;
+}
+
+.column--1 {
+    background-color: lightgray;
+}
